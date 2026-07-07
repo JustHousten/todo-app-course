@@ -3,6 +3,17 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
+## 2026-07-07 – Lektion 1 abgeschlossen
+- `01-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch.
+- Typische Anfänger-Stolperfallen unterwegs erkannt und behoben: In Objekt-Literalen
+  trennt `:` Schlüssel und Wert, nicht `=`; Properties werden per Punkt-Notation
+  abgerufen (`task.id`), nicht wie ein Funktionsaufruf (`task(id)`); Template
+  Literals brauchen Backticks (einfach, nicht doppelt) und `${...}` (geschweifte
+  Klammern, keine runden). Lohnt sich, in kommenden Lektionen auf ähnliche
+  Syntax-Verwechslungen zu achten.
+- **Aktueller Stand:** Lektion 1 vollständig fertig. Bereit für Lektion 2
+  (Operatoren & Bedingungen) – noch nicht angelegt.
+
 ## 2026-07-06 – Start
 - Kurs aufgesetzt (`course/00-roadmap.md`), Lektion 1 (Variablen & Datentypen)
   angelegt.
@@ -21,8 +32,6 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 1 durcharbeiten:
-`course/01-javascript-basics/01-variables-and-data-types.md` lesen, dann
-`course/01-javascript-basics/exercises/01-exercise.js` ausfüllen.
+Lektion 2 (Operatoren & Bedingungen) starten, sobald angelegt.
 
 English version: [PROGRESS.md](PROGRESS.md)

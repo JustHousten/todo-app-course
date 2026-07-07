@@ -4,14 +4,18 @@
 
 // TODO 1: Declare a constant `appName` with the value "todo-app".
 
+const appName = "todo-app";
 
 // TODO 2: Declare a variable `tasksDoneToday` that counts how many tasks have
 // been completed today. Start at 0 (a number, not text).
 
+let tasksDoneToday = 0;
 
 // TODO 3: Print appName and tasksDoneToday with console.log, as one combined
 // sentence, using a template literal. Example target output:
 // "todo-app: 0 task(s) completed today"
+
+console.log(`${appName}: ${tasksDoneToday} task(s) completed today`)
 
 
 // TODO 4: Build an object `task` that represents a single task of the todo app,
@@ -23,12 +27,29 @@
 //   date      -> either a string in "YYYY-MM-DD" format OR null (no deadline)
 //   list      -> either a string (list name) OR null (no list)
 
+let task = {
+    id: "task-1",
+    text: "Buy something",
+    done: false,
+    important: true,
+    date: "1999-07-29",
+    list: "Shopping list"
+}
 
 // TODO 5: Use console.log and typeof to print the data type of EACH property
 // of `task` individually (so 6 console.log lines, one per property).
 // Example for the first line: console.log(typeof task.id);
 
+console.log(typeof(task.id));
+console.log(typeof(task.text));
+console.log(typeof(task.done));
+console.log(typeof(task.important));
+console.log(typeof(task.date));
+console.log(typeof(task.list));
+
 
 // TODO 6 (Bonus): What happens if you try to reassign a variable declared with
 // `const`? Try it here (e.g. with appName) and read the error message in the
 // terminal carefully before removing or commenting out the line again.
+
+// appName = "app-todo"
