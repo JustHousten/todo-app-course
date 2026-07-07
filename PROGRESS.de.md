@@ -3,6 +3,15 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
+## 2026-07-07 – Lektion 2 angelegt
+- Lektion 2 (Operatoren & Bedingungen) geschrieben:
+  `course/01-javascript-basics/02-operators-and-conditionals.md` (+ `.de.md`),
+  Übung unter `course/01-javascript-basics/exercises/02-exercise.js`.
+- Behandelt `===`/`!==` vs. `==`/`!=` (Kursregel: immer strikte Gleichheit),
+  `&&`/`||`/`!`, `if`/`else if`/`else`, Truthy/Falsy-Werte (verknüpft mit
+  `list: null` im Task-Datenmodell) und `switch`.
+- **Aktueller Stand:** Lektion 2 bereit, noch nicht bearbeitet.
+
 ## 2026-07-07 – Lektion 1 abgeschlossen
 - `01-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch.
 - Typische Anfänger-Stolperfallen unterwegs erkannt und behoben: In Objekt-Literalen
@@ -32,6 +41,8 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 2 (Operatoren & Bedingungen) starten, sobald angelegt.
+Lektion 2 durcharbeiten:
+`course/01-javascript-basics/02-operators-and-conditionals.md` lesen, dann
+`course/01-javascript-basics/exercises/02-exercise.js` ausfüllen.
 
 English version: [PROGRESS.md](PROGRESS.md)
