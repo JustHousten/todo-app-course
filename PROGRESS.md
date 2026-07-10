@@ -3,14 +3,17 @@
 Log of the learning journey. Newest entries first. When picking this up after a
 break: read here, then continue in `course/` at the last open lesson.
 
-## 2026-07-07 – Lesson 2 created
-- Lesson 2 (Operators & Conditionals) written:
-  `course/01-javascript-basics/02-operators-and-conditionals.md` (+ `.de.md`),
-  exercise at `course/01-javascript-basics/exercises/02-exercise.js`.
-- Covers `===`/`!==` vs. `==`/`!=` (course rule: always strict equality),
-  `&&`/`||`/`!`, `if`/`else if`/`else`, truthy/falsy values (tied to
-  `list: null` in the task data model), and `switch`.
-- **Current status:** Lesson 2 ready, not yet worked through.
+## 2026-07-07 – Lesson 2 completed
+- Worked through `02-exercise.js` end to end; runs cleanly, all 6 TODOs done
+  correctly (bonus included).
+- Needed several rounds of guided questions to get there — booleans don't need
+  comparison (`if (task.done)`, not `if (task.done === true)`), `!` inverts a
+  value rather than meaning "if not", and truthy/falsy applied to `task.list`.
+  This is a normal part of the learning curve, not a setback — worth keeping
+  explanations concrete/example-first rather than abstract when introducing new
+  operators going forward.
+- **Current status:** Lesson 2 fully done. Ready to start Lesson 3 (Loops) –
+  not yet created.
 
 ## 2026-07-07 – Lesson 1 completed
 - Worked through `01-exercise.js` end to end; runs cleanly with no errors.
@@ -38,8 +41,6 @@ break: read here, then continue in `course/` at the last open lesson.
   worked through.
 
 ## Next step
-Work through Lesson 2: read
-`course/01-javascript-basics/02-operators-and-conditionals.md`, then fill in
-`course/01-javascript-basics/exercises/02-exercise.js`.
+Start Lesson 3 (Loops) once created.
 
 German version: [PROGRESS.de.md](PROGRESS.de.md)

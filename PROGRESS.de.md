@@ -3,14 +3,17 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
-## 2026-07-07 – Lektion 2 angelegt
-- Lektion 2 (Operatoren & Bedingungen) geschrieben:
-  `course/01-javascript-basics/02-operators-and-conditionals.md` (+ `.de.md`),
-  Übung unter `course/01-javascript-basics/exercises/02-exercise.js`.
-- Behandelt `===`/`!==` vs. `==`/`!=` (Kursregel: immer strikte Gleichheit),
-  `&&`/`||`/`!`, `if`/`else if`/`else`, Truthy/Falsy-Werte (verknüpft mit
-  `list: null` im Task-Datenmodell) und `switch`.
-- **Aktueller Stand:** Lektion 2 bereit, noch nicht bearbeitet.
+## 2026-07-07 – Lektion 2 abgeschlossen
+- `02-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
+  TODOs korrekt gelöst (Bonus inklusive).
+- Es brauchte mehrere Runden gezielter Nachfragen: Booleans müssen nicht
+  verglichen werden (`if (task.done)`, nicht `if (task.done === true)`), `!`
+  dreht einen Wert um statt "wenn nicht" zu bedeuten, und Truthy/Falsy
+  angewendet auf `task.list`. Das ist normaler Teil der Lernkurve, kein
+  Rückschritt – bei neuen Operatoren lohnt es sich, weiterhin konkret mit
+  Beispielen statt abstrakt zu erklären.
+- **Aktueller Stand:** Lektion 2 vollständig fertig. Bereit für Lektion 3
+  (Schleifen) – noch nicht angelegt.
 
 ## 2026-07-07 – Lektion 1 abgeschlossen
 - `01-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch.
@@ -41,8 +44,6 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 2 durcharbeiten:
-`course/01-javascript-basics/02-operators-and-conditionals.md` lesen, dann
-`course/01-javascript-basics/exercises/02-exercise.js` ausfüllen.
+Lektion 3 (Schleifen) starten, sobald angelegt.
 
 English version: [PROGRESS.md](PROGRESS.md)
