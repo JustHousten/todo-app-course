@@ -12,6 +12,45 @@ break: read here, then continue in `course/` at the last open lesson.
   together everything so far (template literals, conditionals, loops) into
   small reusable functions operating on task objects.
 - **Current status:** Lesson 4 ready, not yet worked through.
+
+## 2026-07-07 – Lesson 4 completed
+- Worked through `04-exercise.js`; runs cleanly end to end. TODOs 1-5 were
+  **not** correct on the first pass — user worked through several rounds of
+  mistakes in a separate chat first (to keep this session uncluttered), then
+  brought the resulting code here for review:
+  - TODO 1 (`isUrgent`): mixed up the `task` parameter with the outer `tasks`
+    array, and initially left out `return` in one or both branches.
+  - TODO 2 (`formatTask`): used `console.log` instead of `return` at first —
+    needed clarification that the two are not interchangeable (one prints,
+    one hands a value back to the caller).
+  - TODO 3 (`countDone`): several rounds — missing `let`/`const` on the loop
+    variable, `return` initially placed inside the loop (so it fired after
+    the first item instead of after counting all of them), and the counter
+    variable was initially global instead of local to the function.
+  - TODO 4 (`countUrgent`): used `for (task in tasks)` instead of
+    `for (task of tasks)` — `for...in` gives you the index/key, not the item
+    itself, which silently produced wrong values until corrected.
+  - TODO 5 (`logAllTasks`): same `for...in`/`for...of` mix-up resurfaced
+    before landing on the correct version shown here.
+  Worth watching for going forward: the `for...in` vs. `for...of` confusion
+  showed up twice in a row (TODO 4 and 5) — may be worth a deliberate,
+  explicit callout the next time loops-over-objects-vs-arrays comes up.
+- TODO 6 had a real bug: wrapped the new task object in `[...]` (making it an
+  array containing an object) instead of passing the object directly —
+  `isUrgent` then read `undefined` for `.important`/`.done` and silently
+  returned `false`. Self-diagnosed once shown the mismatch between expected
+  and actual output. Fixed by removing the array brackets.
+- User reported functions were noticeably harder than lessons 1-3 — matches
+  the actual struggle above, not just a subjective impression. This is the
+  first lesson requiring holding several concepts (parameters, return values,
+  functions calling functions) in mind simultaneously, so multiple correction
+  rounds here are normal, not a red flag. Prioritized correctness over style;
+  two optional style suggestions (redundant `=== true`/`=== false`
+  comparisons, unnecessary `else { continue }`) were left as-is by choice.
+- **Current status:** Lesson 4 fully done. Ready to start Lesson 5 (Arrays &
+  Their Methods) – not yet created.
+
+## 2026-07-07 – Lesson 3 completed
 - Worked through `03-exercise.js` end to end; runs cleanly, all 6 TODOs done
   correctly (including bonus).
 - Common mix-ups this round: writing all three `for(...)` parts at once
@@ -74,7 +113,6 @@ break: read here, then continue in `course/` at the last open lesson.
   worked through.
 
 ## Next step
-Work through Lesson 4: read `course/01-javascript-basics/04-functions.md`,
-then fill in `course/01-javascript-basics/exercises/04-exercise.js`.
+Start Lesson 5 (Arrays & Their Methods) once created.
 
 German version: [PROGRESS.de.md](PROGRESS.de.md)

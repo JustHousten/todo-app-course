@@ -13,6 +13,50 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   Schleifen) zu kleinen wiederverwendbaren Funktionen, die auf Task-Objekten
   arbeiten.
 - **Aktueller Stand:** Lektion 4 bereit, noch nicht bearbeitet.
+
+## 2026-07-07 – Lektion 4 abgeschlossen
+- `04-exercise.js` durchgearbeitet; läuft am Ende fehlerfrei durch. TODOs 1-5
+  waren **nicht** beim ersten Versuch korrekt – der Nutzer hat mehrere
+  Fehlerrunden in einem separaten Chat durchgearbeitet (um diese Session
+  übersichtlich zu halten) und dann den fertigen Code hier zur Prüfung
+  vorgelegt:
+  - TODO 1 (`isUrgent`): den Parameter `task` mit dem äußeren `tasks`-Array
+    verwechselt, außerdem anfangs `return` in einem oder beiden Zweigen
+    vergessen.
+  - TODO 2 (`formatTask`): zunächst `console.log` statt `return` benutzt –
+    musste geklärt werden, dass beides nicht austauschbar ist (eines gibt
+    aus, das andere liefert einen Wert an den Aufrufer zurück).
+  - TODO 3 (`countDone`): mehrere Runden – fehlendes `let`/`const` bei der
+    Schleifenvariable, `return` zunächst innerhalb der Schleife platziert
+    (löste also schon nach dem ersten Element aus, statt nach dem Zählen
+    aller), und die Zählvariable war anfangs global statt lokal zur Funktion.
+  - TODO 4 (`countUrgent`): `for (task in tasks)` statt `for (task of tasks)`
+    benutzt – `for...in` liefert den Index/Schlüssel, nicht das Element
+    selbst, was still falsche Werte erzeugte, bis korrigiert.
+  - TODO 5 (`logAllTasks`): dieselbe `for...in`/`for...of`-Verwechslung kam
+    nochmal vor, bevor die hier gezeigte korrekte Version stand.
+  Für später im Blick behalten: Die `for...in`-vs.-`for...of`-Verwechslung
+  kam zweimal hintereinander vor (TODO 4 und 5) – lohnt sich, das nächste Mal,
+  wenn Schleifen über Objekte vs. Arrays drankommen, gezielt und explizit
+  nochmal anzusprechen.
+- TODO 6 hatte einen echten Bug: das neue Task-Objekt wurde in `[...]`
+  eingepackt (also ein Array, das ein Objekt enthält) statt es direkt zu
+  übergeben – `isUrgent` las dadurch `undefined` für `.important`/`.done` und
+  gab still `false` zurück. Selbst diagnostiziert, nachdem der Unterschied
+  zwischen erwarteter und tatsächlicher Ausgabe aufgezeigt wurde. Behoben
+  durch Entfernen der Array-Klammern.
+- Nutzer berichtete, dass Funktionen spürbar schwerer waren als Lektion 1-3 –
+  deckt sich mit dem tatsächlichen Verlauf oben, war also kein rein
+  subjektiver Eindruck. Das ist die erste Lektion, die mehrere Konzepte
+  gleichzeitig im Kopf behalten verlangt (Parameter, Rückgabewerte, Funktionen
+  die Funktionen aufrufen), mehrere Korrekturrunden sind hier also normal,
+  kein Warnsignal. Korrektheit vor Stil priorisiert; zwei optionale
+  Stil-Vorschläge (redundante `=== true`/`=== false`-Vergleiche, unnötiges
+  `else { continue }`) bewusst nicht umgesetzt.
+- **Aktueller Stand:** Lektion 4 vollständig fertig. Bereit für Lektion 5
+  (Arrays & ihre Methoden) – noch nicht angelegt.
+
+## 2026-07-07 – Lektion 3 abgeschlossen
 - `03-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
   TODOs korrekt gelöst (Bonus inklusive).
 - Typische Verwechslungen diesmal: alle drei `for(...)`-Teile auf einmal
@@ -79,7 +123,6 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 4 durcharbeiten: `course/01-javascript-basics/04-functions.md` lesen,
-dann `course/01-javascript-basics/exercises/04-exercise.js` ausfüllen.
+Lektion 5 (Arrays & ihre Methoden) starten, sobald angelegt.
 
 English version: [PROGRESS.md](PROGRESS.md)
