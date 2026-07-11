@@ -3,6 +3,16 @@
 Log of the learning journey. Newest entries first. When picking this up after a
 break: read here, then continue in `course/` at the last open lesson.
 
+## 2026-07-07 – Lesson 5 created
+- Lesson 5 (Arrays & Their Methods) written:
+  `course/01-javascript-basics/05-arrays-and-their-methods.md` (+ `.de.md`),
+  exercise at `course/01-javascript-basics/exercises/05-exercise.js`.
+- Covers `.push`/`.pop` (mutating), `.filter()` and `.map()` (both return new
+  arrays, same vs. different length), `.find()` (first match, not an array),
+  `.sort()` and its default lexicographic-comparison trap for numbers (needs a
+  compare function), and method chaining.
+- **Current status:** Lesson 5 ready, not yet worked through.
+
 ## 2026-07-07 – Lesson 4 created
 - Lesson 4 (Functions) written: `course/01-javascript-basics/04-functions.md`
   (+ `.de.md`), exercise at `course/01-javascript-basics/exercises/04-exercise.js`.
@@ -113,6 +123,8 @@ break: read here, then continue in `course/` at the last open lesson.
   worked through.
 
 ## Next step
-Start Lesson 5 (Arrays & Their Methods) once created.
+Work through Lesson 5: read
+`course/01-javascript-basics/05-arrays-and-their-methods.md`, then fill in
+`course/01-javascript-basics/exercises/05-exercise.js`.
 
 German version: [PROGRESS.de.md](PROGRESS.de.md)

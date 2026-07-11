@@ -3,6 +3,17 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
+## 2026-07-07 – Lektion 5 angelegt
+- Lektion 5 (Arrays & ihre Methoden) geschrieben:
+  `course/01-javascript-basics/05-arrays-and-their-methods.md` (+ `.de.md`),
+  Übung unter `course/01-javascript-basics/exercises/05-exercise.js`.
+- Behandelt `.push`/`.pop` (verändern das Original), `.filter()` und `.map()`
+  (beide geben neue Arrays zurück, gleiche vs. unterschiedliche Länge),
+  `.find()` (erster Treffer, kein Array), `.sort()` und seine
+  Standard-Falle bei Zahlen (alphabetischer statt numerischer Vergleich,
+  braucht eine Vergleichsfunktion), sowie Methodenverkettung.
+- **Aktueller Stand:** Lektion 5 bereit, noch nicht bearbeitet.
+
 ## 2026-07-07 – Lektion 4 angelegt
 - Lektion 4 (Funktionen) geschrieben: `course/01-javascript-basics/04-functions.md`
   (+ `.de.md`), Übung unter `course/01-javascript-basics/exercises/04-exercise.js`.
@@ -123,6 +134,8 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 5 (Arrays & ihre Methoden) starten, sobald angelegt.
+Lektion 5 durcharbeiten:
+`course/01-javascript-basics/05-arrays-and-their-methods.md` lesen, dann
+`course/01-javascript-basics/exercises/05-exercise.js` ausfüllen.
 
 English version: [PROGRESS.md](PROGRESS.md)
