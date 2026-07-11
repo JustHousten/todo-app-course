@@ -3,13 +3,23 @@
 Log of the learning journey. Newest entries first. When picking this up after a
 break: read here, then continue in `course/` at the last open lesson.
 
-## 2026-07-07 – Lesson 2 completed
+## 2026-07-07 – Lesson 2 completed (revised)
 - Worked through `02-exercise.js` end to end; runs cleanly, all 6 TODOs done
   correctly (bonus included).
-- Needed several rounds of guided questions to get there — booleans don't need
+- TODO 5 went through a follow-up revision after the initial commit: first
+  attempt switched directly on `task.important` (a boolean) instead of on a
+  derived `priority` string as the exercise intended — functionally fine, but
+  a different exercise than asked. Rewritten to build `priority` via
+  `if`/`else` first, then `switch` on that. Along the way, caught two related
+  bugs from the rewrite itself: an undeclared variable silently became an
+  implicit global (works without `"use strict"`, but is a classic JS trap
+  worth flagging again in a later lesson), and a variable name typo
+  (`priotity` vs. `priority`) meant the declared variable was never the one
+  actually used.
+- Needed several rounds of guided questions overall — booleans don't need
   comparison (`if (task.done)`, not `if (task.done === true)`), `!` inverts a
-  value rather than meaning "if not", and truthy/falsy applied to `task.list`.
-  This is a normal part of the learning curve, not a setback — worth keeping
+  value rather than meaning "if not", truthy/falsy applied to `task.list`. This
+  is a normal part of the learning curve, not a setback — worth keeping
   explanations concrete/example-first rather than abstract when introducing new
   operators going forward.
 - **Current status:** Lesson 2 fully done. Ready to start Lesson 3 (Loops) –

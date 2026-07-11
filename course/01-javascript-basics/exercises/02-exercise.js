@@ -16,8 +16,6 @@ const today = "2026-07-07";
 // TODO 1: Write an if/else that checks task.done. If true, log
 // "Already done." — if false, log "Still open."
 
-const tasksDoneToday = 0;
-
 if (task.done) {
   console.log("Already done.");
 } else {
@@ -59,19 +57,25 @@ if (task.list) {
 // cases "high" and "low" (plus a default case) that logs a different message
 // for each.
 
-let priotity = "";
+// Housten: I've done the TODO not the way it was intended so i've gave it another try to be precise. 
 
-switch (task.important) {
-  case true:
+let priority;
+
+if (task.important) {
+  priority = "high";
+} else {
+  priority = "low";
+}
+
+switch (priority) {
+  case "high":
     console.log("High priority!");
-    priotity = "high";
     break;
-  case false:
-    console.log("Low priority.");
-    priotity = "low";
+  case "low":
+    console.log("Low priority")
     break;
   default:
-    console.log("No priority known.");
+    console.log("No priority known.")
 }
 
 // TODO 6 (Bonus): Log the result of 5 == "5" and 5 === "5" and, in a comment
@@ -79,3 +83,4 @@ switch (task.important) {
 
 console.log(5 == "5"); // Er vergleicht nur den Inhalt miteinander nicht den Typen, herauskommen wird, dass beides eine 5 also gleich ist.
 console.log(5 === "5"); // Er vergleicht sowohl Inhalt als auch Datentyp, herauskommen sollte, dass es nicht gleich ist.
+

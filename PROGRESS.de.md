@@ -3,12 +3,23 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
-## 2026-07-07 – Lektion 2 abgeschlossen
+## 2026-07-07 – Lektion 2 abgeschlossen (überarbeitet)
 - `02-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
   TODOs korrekt gelöst (Bonus inklusive).
-- Es brauchte mehrere Runden gezielter Nachfragen: Booleans müssen nicht
-  verglichen werden (`if (task.done)`, nicht `if (task.done === true)`), `!`
-  dreht einen Wert um statt "wenn nicht" zu bedeuten, und Truthy/Falsy
+- TODO 5 wurde nach dem ersten Commit nochmal überarbeitet: Der erste Versuch
+  hat direkt auf `task.important` (einen Boolean) geswitcht statt auf einen
+  daraus abgeleiteten `priority`-String, wie die Aufgabe eigentlich wollte –
+  funktional okay, aber eine andere Übung als gefragt. Umgeschrieben, sodass
+  erst per `if`/`else` `priority` bestimmt wird und danach darauf geswitcht
+  wird. Dabei zwei zusätzliche Bugs aus dem Umschreiben selbst gefunden: eine
+  nicht deklarierte Variable wurde still zu einer impliziten globalen Variable
+  (funktioniert ohne `"use strict"`, ist aber eine klassische JS-Falle, die es
+  wert ist, in einer späteren Lektion nochmal aufzugreifen), sowie ein
+  Tippfehler im Variablennamen (`priotity` vs. `priority`), wodurch die
+  deklarierte Variable nie die tatsächlich benutzte war.
+- Insgesamt brauchte es mehrere Runden gezielter Nachfragen: Booleans müssen
+  nicht verglichen werden (`if (task.done)`, nicht `if (task.done === true)`),
+  `!` dreht einen Wert um statt "wenn nicht" zu bedeuten, Truthy/Falsy
   angewendet auf `task.list`. Das ist normaler Teil der Lernkurve, kein
   Rückschritt – bei neuen Operatoren lohnt es sich, weiterhin konkret mit
   Beispielen statt abstrakt zu erklären.
