@@ -46,7 +46,7 @@ for (const text of taskTexts) {
 // itself should NOT be logged, and nothing after it either.
 
 for (const text of taskTexts) {
-    if (text == "Walk the dog") {
+    if (text === "Walk the dog") {
         break;
     } else {
         console.log(text);
@@ -58,7 +58,7 @@ for (const text of taskTexts) {
 // still gets logged).
 
 for (const text of taskTexts) {
-    if (text == "Do laundry") {
+    if (text === "Do laundry") {
         continue;
     } else {
         console.log(text);
