@@ -3,7 +3,16 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
-## 2026-07-07 – Lektion 3 abgeschlossen
+## 2026-07-07 – Lektion 4 angelegt
+- Lektion 4 (Funktionen) geschrieben: `course/01-javascript-basics/04-functions.md`
+  (+ `.de.md`), Übung unter `course/01-javascript-basics/exercises/04-exercise.js`.
+- Behandelt Funktionsdeklarationen, Parameter vs. Argumente, Rückgabewerte
+  (inkl. implizites `undefined` und Sofort-Abbruch-Verhalten), Arrow Functions
+  und impliziten Return, sowie Funktionen, die andere Funktionen aufrufen. Die
+  Übung führt alles Bisherige zusammen (Template Literals, Bedingungen,
+  Schleifen) zu kleinen wiederverwendbaren Funktionen, die auf Task-Objekten
+  arbeiten.
+- **Aktueller Stand:** Lektion 4 bereit, noch nicht bearbeitet.
 - `03-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
   TODOs korrekt gelöst (Bonus inklusive).
 - Typische Verwechslungen diesmal: alle drei `for(...)`-Teile auf einmal
@@ -70,6 +79,7 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 4 (Funktionen) starten, sobald angelegt.
+Lektion 4 durcharbeiten: `course/01-javascript-basics/04-functions.md` lesen,
+dann `course/01-javascript-basics/exercises/04-exercise.js` ausfüllen.
 
 English version: [PROGRESS.md](PROGRESS.md)

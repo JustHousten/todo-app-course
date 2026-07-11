@@ -3,7 +3,15 @@
 Log of the learning journey. Newest entries first. When picking this up after a
 break: read here, then continue in `course/` at the last open lesson.
 
-## 2026-07-07 – Lesson 3 completed
+## 2026-07-07 – Lesson 4 created
+- Lesson 4 (Functions) written: `course/01-javascript-basics/04-functions.md`
+  (+ `.de.md`), exercise at `course/01-javascript-basics/exercises/04-exercise.js`.
+- Covers function declarations, parameters vs. arguments, return values
+  (including implicit `undefined` and early-exit behavior), arrow functions
+  and implicit return, and functions calling other functions. Exercise ties
+  together everything so far (template literals, conditionals, loops) into
+  small reusable functions operating on task objects.
+- **Current status:** Lesson 4 ready, not yet worked through.
 - Worked through `03-exercise.js` end to end; runs cleanly, all 6 TODOs done
   correctly (including bonus).
 - Common mix-ups this round: writing all three `for(...)` parts at once
@@ -66,6 +74,7 @@ break: read here, then continue in `course/` at the last open lesson.
   worked through.
 
 ## Next step
-Start Lesson 4 (Functions) once created.
+Work through Lesson 4: read `course/01-javascript-basics/04-functions.md`,
+then fill in `course/01-javascript-basics/exercises/04-exercise.js`.
 
 German version: [PROGRESS.de.md](PROGRESS.de.md)
