@@ -3,12 +3,20 @@
 Log of the learning journey. Newest entries first. When picking this up after a
 break: read here, then continue in `course/` at the last open lesson.
 
-## 2026-07-07 – Lesson 3 created
-- Lesson 3 (Loops) written: `course/01-javascript-basics/03-loops.md`
-  (+ `.de.md`), exercise at `course/01-javascript-basics/exercises/03-exercise.js`.
-- Covers classic `for`, `while` (and the infinite-loop risk if you forget to
-  update the counter), `for...of` for arrays, `.length`, and `break`/`continue`.
-- **Current status:** Lesson 3 ready, not yet worked through.
+## 2026-07-07 – Lesson 3 completed
+- Worked through `03-exercise.js` end to end; runs cleanly, all 6 TODOs done
+  correctly (including bonus).
+- Common mix-ups this round: writing all three `for(...)` parts at once
+  instead of building them up one at a time, confusing `for...of` (value only)
+  with classic `for` (needed here since the exercise wanted a 1-based index
+  alongside each value), and `taskTexts.lengths` (typo + wrong target — array
+  length instead of the individual string's length). All self-corrected after
+  a worked example with different variables.
+- Minor style note carried over into TODO 5/6: used `==` instead of the
+  course's `===` convention from Lesson 2. Not a bug here (both sides are
+  strings), flagged as a habit reminder, not fixed in-place.
+- **Current status:** Lesson 3 fully done. Ready to start Lesson 4 (Functions)
+  – not yet created.
 
 ## 2026-07-07 – Lesson 2 completed (revised)
 - Worked through `02-exercise.js` end to end; runs cleanly, all 6 TODOs done
@@ -58,7 +66,6 @@ break: read here, then continue in `course/` at the last open lesson.
   worked through.
 
 ## Next step
-Work through Lesson 3: read `course/01-javascript-basics/03-loops.md`, then
-fill in `course/01-javascript-basics/exercises/03-exercise.js`.
+Start Lesson 4 (Functions) once created.
 
 German version: [PROGRESS.de.md](PROGRESS.de.md)

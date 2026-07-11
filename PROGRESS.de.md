@@ -3,13 +3,20 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
-## 2026-07-07 – Lektion 3 angelegt
-- Lektion 3 (Schleifen) geschrieben: `course/01-javascript-basics/03-loops.md`
-  (+ `.de.md`), Übung unter `course/01-javascript-basics/exercises/03-exercise.js`.
-- Behandelt klassisches `for`, `while` (inkl. Endlosschleifen-Risiko, wenn man
-  vergisst die Zählvariable zu erhöhen), `for...of` für Arrays, `.length`, und
-  `break`/`continue`.
-- **Aktueller Stand:** Lektion 3 bereit, noch nicht bearbeitet.
+## 2026-07-07 – Lektion 3 abgeschlossen
+- `03-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
+  TODOs korrekt gelöst (Bonus inklusive).
+- Typische Verwechslungen diesmal: alle drei `for(...)`-Teile auf einmal
+  schreiben statt sie Schritt für Schritt aufzubauen, `for...of` (nur der Wert)
+  mit klassischem `for` verwechseln (hier gebraucht, weil die Aufgabe eine
+  1-basierte Nummer neben jedem Wert wollte), sowie `taskTexts.lengths`
+  (Tippfehler + falsches Ziel – Array-Länge statt Länge des einzelnen Strings).
+  Alles nach einem Beispiel mit anderen Variablen selbst korrigiert.
+- Kleiner Stil-Hinweis, der sich bei TODO 5/6 eingeschlichen hat: `==` statt
+  der Kurs-Konvention `===` aus Lektion 2 benutzt. Kein Bug hier (beide Seiten
+  sind Strings), als Gewohnheits-Erinnerung markiert, nicht direkt korrigiert.
+- **Aktueller Stand:** Lektion 3 vollständig fertig. Bereit für Lektion 4
+  (Funktionen) – noch nicht angelegt.
 
 ## 2026-07-07 – Lektion 2 abgeschlossen (überarbeitet)
 - `02-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
@@ -63,7 +70,6 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 3 durcharbeiten: `course/01-javascript-basics/03-loops.md` lesen, dann
-`course/01-javascript-basics/exercises/03-exercise.js` ausfüllen.
+Lektion 4 (Funktionen) starten, sobald angelegt.
 
 English version: [PROGRESS.md](PROGRESS.md)
