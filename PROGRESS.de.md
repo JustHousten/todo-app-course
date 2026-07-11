@@ -3,6 +3,14 @@
 Log der Lernreise. Neueste Einträge oben. Bei Wiedereinstieg nach Pause: hier lesen,
 dann in `course/` bei der letzten offenen Lektion weitermachen.
 
+## 2026-07-07 – Lektion 3 angelegt
+- Lektion 3 (Schleifen) geschrieben: `course/01-javascript-basics/03-loops.md`
+  (+ `.de.md`), Übung unter `course/01-javascript-basics/exercises/03-exercise.js`.
+- Behandelt klassisches `for`, `while` (inkl. Endlosschleifen-Risiko, wenn man
+  vergisst die Zählvariable zu erhöhen), `for...of` für Arrays, `.length`, und
+  `break`/`continue`.
+- **Aktueller Stand:** Lektion 3 bereit, noch nicht bearbeitet.
+
 ## 2026-07-07 – Lektion 2 abgeschlossen (überarbeitet)
 - `02-exercise.js` komplett durchgearbeitet; läuft fehlerfrei durch, alle 6
   TODOs korrekt gelöst (Bonus inklusive).
@@ -55,6 +63,7 @@ dann in `course/` bei der letzten offenen Lektion weitermachen.
   nicht bearbeitet.
 
 ## Nächster Schritt
-Lektion 3 (Schleifen) starten, sobald angelegt.
+Lektion 3 durcharbeiten: `course/01-javascript-basics/03-loops.md` lesen, dann
+`course/01-javascript-basics/exercises/03-exercise.js` ausfüllen.
 
 English version: [PROGRESS.md](PROGRESS.md)
