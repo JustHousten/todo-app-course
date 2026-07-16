@@ -56,6 +56,16 @@ This replaces exactly the pattern you wrote by hand in earlier lessons:
 looping with `for...of`, checking an `if`, and manually collecting matches.
 `.filter()` does all of that in one line.
 
+**Important:** the function you pass to `.filter()` is not a special
+mini-language with limited abilities — it's a completely normal function. It
+can contain anything a condition in an `if` from Lesson 2 could: combined
+checks with `&&`/`||`, negation with `!`, comparisons, calls to other
+functions, whatever you need. `(task) => task.done` is just the simplest
+possible case (checking one property directly). Nothing stops you from
+writing something like `(task) => task.important && !task.done` — same
+logic you already know, just living inside the arrow function instead of an
+`if` block.
+
 ## `.map()` — transform every item
 
 ```js

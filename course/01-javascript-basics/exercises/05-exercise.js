@@ -12,10 +12,14 @@ const tasks = [
 // TODO 1: Use .filter() to build a new array called doneTasks containing only
 // the tasks where done is true. Log doneTasks.
 
+const doneTasks = tasks.filter((task) => task.done);
+console.log(doneTasks);
 
 // TODO 2: Use .filter() to build a new array called urgentTasks containing
 // only the tasks that are important AND not done. Log urgentTasks.
 
+const urgentTasks = tasks.filter((task) => task.important && task.done === false);
+console.log(urgentTasks);
 
 // TODO 3: Use .map() to build a new array called allTexts containing just the
 // .text of every task (so an array of 4 strings). Log allTexts.

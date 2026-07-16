@@ -57,6 +57,17 @@ Das ersetzt genau das Muster, das du in früheren Lektionen von Hand
 geschrieben hast: mit `for...of` schleifen, mit `if` prüfen, Treffer manuell
 einsammeln. `.filter()` erledigt das alles in einer Zeile.
 
+**Wichtig:** Die Funktion, die du `.filter()` übergibst, ist keine spezielle
+Mini-Sprache mit eingeschränkten Fähigkeiten – sie ist eine ganz normale
+Funktion. Sie darf alles enthalten, was eine Bedingung in einem `if` aus
+Lektion 2 auch könnte: kombinierte Prüfungen mit `&&`/`||`, Verneinung mit
+`!`, Vergleiche, Aufrufe anderer Funktionen – was auch immer du brauchst.
+`(task) => task.done` ist nur der einfachste mögliche Fall (eine einzelne
+Eigenschaft direkt geprüft). Nichts hindert dich daran, etwas wie
+`(task) => task.important && !task.done` zu schreiben – dieselbe Logik, die
+du schon kennst, nur diesmal in der Arrow Function statt in einem
+`if`-Block.
+
 ## `.map()` — jedes Element umwandeln
 
 ```js
